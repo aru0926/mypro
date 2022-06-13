@@ -1,0 +1,259 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'feathericons';
+	src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+	src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+.grid {
+	position: relative;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 0 2em;
+}
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+/*---------------*/
+/***** Chico *****/
+/*---------------*/
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico figcaption {
+    padding: 3em 2em;
+}
+
+figure.effect-chico figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #ff57226b;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+    content: '';
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+    padding: 11px 0 13px 0;
+    color: #fff;
+    font-size: 30px;
+    z-index: 9999;
+}
+figure.effect-chico p {
+    margin: 0 auto;
+    max-width: 290px;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    font-size: 13px;
+    color: #ffff;
+}
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+
+/*--responsive--*/
+@media(max-width:1920px){
+	
+}
+@media(max-width:1680px){
+	
+}
+@media(max-width:1600px){
+	
+}
+@media(max-width:1440px){
+figure.effect-chico h2 {
+    font-size: 28px;	
+}
+}
+@media(max-width:1366px){
+	
+}
+@media(max-width:1280px){
+	
+}
+@media(max-width:1080px){
+figure.effect-chico h2 {
+    padding: 1px 0 5px 0;
+}
+}
+@media(max-width:1050px){
+	
+}
+@media(max-width:1024px){
+	
+}
+@media(max-width:991px){
+figure.effect-chico h2 {
+    padding: 75px 0 25px 0;
+}
+}
+@media(max-width:900px){
+	
+}
+@media(max-width:800px){
+	
+}
+@media(max-width:768px){
+	
+}
+@media(max-width:767px){
+	figure.effect-chico h2 {
+    padding: 41px 0 25px 0;
+}
+}
+@media(max-width:736px){
+
+}
+@media(max-width:667px){
+	
+}
+@media(max-width:640px){
+	
+}
+@media(max-width:600px){
+	figure.effect-chico h2 {
+    font-size: 24px;
+}
+}
+@media(max-width:568px){
+	
+}
+@media(max-width:480px){
+figure.effect-chico h2 {
+    padding: 23px 0 25px 0;
+}	
+}
+@media(max-width:440px){
+	
+}
+@media(max-width:414px){
+figure.effect-chico h2 {
+    padding: 6px 0 25px 0;
+}	
+}
+@media(max-width:384px){
+	figure.effect-chico h2 {
+    font-size: 21px;
+	padding: 6px 0 7px 0px;
+}
+}
+@media(max-width:375px){	
+}
+@media(max-width:320px){
+figure.effect-chico h2 {
+    font-size: 19px;
+    padding: 1px 0 4px 0px;
+}
+figure.effect-chico figcaption {
+    padding: 2.5em 1.5em;
+}	
+}
+/*--//responsive--*/
